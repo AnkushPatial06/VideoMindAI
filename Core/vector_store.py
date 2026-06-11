@@ -18,8 +18,8 @@ def build_vector_store(transcript : str)->Chroma:
     print("Building vector Store")
 
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size = 500,
-        chunk_overlap = 75
+        chunk_size = 800,
+        chunk_overlap = 200
     )
     chunks = splitter.split_text(transcript)
 
